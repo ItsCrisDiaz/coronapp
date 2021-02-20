@@ -1,0 +1,29 @@
+:root {
+  /* Colors*/
+  --primary-color: #1d957f;
+  --secondary-color: #4285f4;
+  --grey: #616161;
+  --black: #000000;
+  --background-blue: #fafbfd;
+  --background-white: #ffffff;
+  /*Fonts*/
+  --font-body: "Rubik", sans-serif;
+  --font-button: "Raleway", sans-serif;
+  /*Font sizes*/
+  --biggest: 4.4rem;
+  --big: 3.6rem;
+  --normal: 1.6rem;
+  --small: 1.1rem;
+  --smallest: 0.9rem;
+  /*Line heigth*/
+  --line-paragraph: 1.662rem;
+  --line-big-title: 5.544rem;
+  --line-medium-title: 6.6rem;
+  --line-normal-title: 2.216rem;
+  /*Otros*/
+  --box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+}
+
+body {
+  font-size: 62.5%;
+}
