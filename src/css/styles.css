@@ -50,7 +50,20 @@ html {
   background-image: url(../images/icons/menu-mobile.svg);
 }
 
+.black-space {
+  position: absolute;
+  left: 0;
+  top: 11.4rem;
+  background-color: rgba(88, 126, 236, 0.3);
+  width: 10vw;
+  height: calc(100vh - 11.4rem);
+}
+
 /*BLOCK*/
+
+.menu-display {
+  display: none;
+}
 
 .header {
   height: 11.4rem;
@@ -61,7 +74,20 @@ html {
 }
 
 .header ul[role="menu"] {
-  display: none;
+  --flow-space: 2.4rem;
+  position: absolute;
+  left: 10vw;
+  top: 11.4rem;
+  margin-top: 0;
+  padding: 6.7rem 0 0 6.8rem;
+  width: 95vw;
+  height: calc(100vh - 11.4rem);
+  border: 1px solid var(--black);
+  font-family: var(--font-button);
+  background-color: var(--primary-color);
+  color: var(--background-white);
+  font-size: var(--normal);
+  font-weight: bold;
 }
 
 /*EXCEPTIONS*/
