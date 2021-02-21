@@ -236,7 +236,7 @@ strong {
 
 .hero-cta {
   --flow-space: 1.6rem;
-  padding-bottom: 4rem;
+  padding: 4rem 0;
 }
 
 .hero-cta h2 {
