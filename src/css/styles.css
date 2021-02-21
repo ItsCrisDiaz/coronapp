@@ -92,6 +92,10 @@ p {
   color: var(--grey);
 }
 
+strong {
+  color: var(--primary-color);
+}
+
 /*BLOCK*/
 
 /*--Block header*/
@@ -135,10 +139,6 @@ p {
   text-align: center;
 }
 
-.hero-intro h1 strong {
-  color: var(--primary-color);
-}
-
 .hero-intro p {
   text-align: center;
 }
@@ -159,7 +159,9 @@ p {
 }
 
 .hero-intro img {
-  margin-top: 4.4rem;
+  margin: 4.4rem auto 0;
+  width: 100%;
+  max-width: 395px;
 }
 
 /*--Block hero-functions*/
@@ -206,6 +208,12 @@ p {
   text-align: center;
 }
 
+.hero-functions img {
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .dot-container {
   display: flex;
   justify-content: center;
@@ -222,6 +230,27 @@ p {
 
 .dot-container div:nth-child(2) {
   background-color: var(--primary-color);
+}
+
+/*--Block hero-cta*/
+
+.hero-cta {
+  --flow-space: 1.6rem;
+  padding-bottom: 4rem;
+}
+
+.hero-cta h2 {
+  font-size: var(--big);
+  text-align: center;
+}
+
+.hero-cta p {
+  text-align: center;
+}
+
+.hero-cta div {
+  display: flex;
+  justify-content: center;
 }
 
 /*--Block button*/
