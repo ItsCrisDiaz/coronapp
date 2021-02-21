@@ -56,6 +56,18 @@ html {
   background-image: url(../images/icons/play-icon.svg);
 }
 
+.sympthoms {
+  background-image: url(../images/icons/sintomas.svg);
+}
+
+.nurse {
+  background-image: url(../images/icons/enfermera.svg);
+}
+
+.health {
+  background-image: url(../images/icons/salud.svg);
+}
+
 .black-space {
   position: absolute;
   left: 0;
@@ -357,6 +369,64 @@ strong {
   justify-content: center;
 }
 
+.services {
+  padding: 4rem 0;
+}
+
+.services h2 {
+  font-size: var(--big);
+  line-height: var(--line-big-title);
+  text-align: center;
+  padding-bottom: 1.6rem;
+}
+
+.services p {
+  text-align: center;
+}
+
+.services h3 {
+  font-size: var(--normal);
+  letter-spacing: 0.08ch;
+  text-align: center;
+  padding-bottom: 0.6rem;
+}
+
+.service-description {
+  padding-bottom: 3.2rem;
+}
+
+.service-container {
+  --flow-space: 4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 3rem;
+}
+
+.service-container article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 28rem;
+  width: 100%;
+  max-width: 28rem;
+  padding: 4rem 2.5rem;
+  border-radius: 8px;
+}
+
+.service-container article:nth-child(odd) {
+  box-shadow: var(--box-shadow);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+}
+
 /*EXCEPTIONS*/
 
 .icon[type="mobile-menu"] {
@@ -369,4 +439,11 @@ strong {
   width: 40px;
   height: 40px;
   margin-right: 2rem;
+}
+
+.icon[location="services"] {
+  width: 72px;
+  height: 72px;
+  background-size: contain;
+  margin: 0 auto;
 }
