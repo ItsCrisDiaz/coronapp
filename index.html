@@ -12,6 +12,16 @@
     <link rel="icon" href="./src/images/icons/favicon.svg" />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width: 375px)"
+      href="./src/css/375px.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 425px)"
+      href="./src/css/425px.css"
+    />
     <title>Coronapp</title>
   </head>
   <body>
@@ -52,8 +62,8 @@
           />
         </picture>
       </section>
-      <section class="hero-functions">
-        <article>
+      <section class="hero-functions-container">
+        <article class="hero-functions">
           <picture>
             <img
               src="./src/images/img/mujer-enferma.png"
@@ -61,22 +71,24 @@
             />
           </picture>
           <h2>Enfermedad por el nuevo coronavirus</h2>
-          <p>
+          <p class="smaller-fs">
             La COVID-19 afecta de distintas maneras en función de cada persona.
           </p>
-          <div>
+          <div class="dot-container">
             <div></div>
             <div></div>
             <div></div>
           </div>
         </article>
       </section>
-      <h2>Mantente seguro con <strong>Coronapp.</strong></h2>
-      <p>
-        Soporte 24x7 y plataforma móvil fácil de usar para llevar la atención
-        médica a su alcance. Regístrese y sea parte de la nueva cultura de la
-        salud.
-      </p>
+      <section>
+        <h2>Mantente seguro con <strong>Coronapp.</strong></h2>
+        <p>
+          Soporte 24x7 y plataforma móvil fácil de usar para llevar la atención
+          médica a su alcance. Regístrese y sea parte de la nueva cultura de la
+          salud.
+        </p>
+      </section>
       <button class="button | green-bg smaller-fs">EMPEZAR</button>
     </main>
   </body>

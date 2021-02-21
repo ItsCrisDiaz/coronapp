@@ -1,0 +1,5 @@
+@media (min-width: 375px) {
+  .hero-functions::before {
+    width: 19px;
+  }
+}

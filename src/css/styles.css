@@ -12,6 +12,7 @@
   /*Font sizes*/
   --biggest: 4.4rem;
   --big: 3.6rem;
+  --middle: 2.2rem;
   --normal: 1.6rem;
   --small: 1.2rem;
   --smaller: 1.1rem;
@@ -120,11 +121,13 @@ p {
   font-weight: bold;
 }
 
-/*--Block main*/
+/*--Block hero*/
 
 .hero {
   padding: 0 1.8rem;
 }
+
+/*--Block hero-intro*/
 
 .hero-intro h1 {
   font-size: var(--biggest);
@@ -153,6 +156,72 @@ p {
   text-decoration: none;
   color: var(--black);
   letter-spacing: 0.165ch;
+}
+
+.hero-intro img {
+  margin-top: 4.4rem;
+}
+
+/*--Block hero-functions*/
+
+.hero-functions-container {
+  position: relative;
+  max-width: 360px;
+  margin-top: 11.2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-functions {
+  width: 80%;
+  padding: 8rem 1.4rem 1.4rem;
+  border: 3px solid var(--primary-color);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  z-index: 2;
+}
+
+.hero-functions::before {
+  position: absolute;
+  top: 12%;
+  left: 4.58%;
+  content: "";
+  width: 18px;
+  z-index: -1;
+  height: 100px;
+  background-color: var(--primary-color);
+  border-radius: 17px 0 0 17px;
+}
+
+.hero-functions h2 {
+  margin-top: 1.6rem;
+  margin-bottom: 1.1rem;
+  font-size: var(--middle);
+  line-height: 2.7rem;
+  text-align: center;
+}
+
+.hero-functions p {
+  text-align: center;
+}
+
+.dot-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 6.4rem;
+  gap: 7px;
+}
+
+.dot-container div {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: var(--grey);
+}
+
+.dot-container div:nth-child(2) {
+  background-color: var(--primary-color);
 }
 
 /*--Block button*/
