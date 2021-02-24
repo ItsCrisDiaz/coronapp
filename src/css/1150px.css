@@ -1,0 +1,48 @@
+@media (min-width: 1150px) {
+  .service-container article {
+    position: relative;
+  }
+  .service-container article .stacking-context {
+    position: relative;
+  }
+
+  .service-container article .square {
+    position: absolute;
+  }
+
+  .service-container article:nth-child(1) .square:nth-child(1) {
+    border-radius: 1.6rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    transform: rotate(30deg);
+    top: 85%;
+    left: -8%;
+  }
+
+  .service-container article:nth-child(1) .square:nth-child(2) {
+    border-radius: 3rem;
+    width: 9.6rem;
+    height: 9.6rem;
+    transform: rotate(105deg);
+    top: 19%;
+    left: 76%;
+  }
+
+  .service-container article:nth-child(3) .square:nth-child(1) {
+    border-radius: 3rem;
+    width: 12.7rem;
+    height: 12.7rem;
+    transform: rotate(-30deg);
+    top: 61%;
+    left: -11%;
+  }
+
+  .service-container article:nth-child(3) .square:nth-child(2) {
+    border-radius: 1.6rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    transform: rotate(-30deg);
+    top: -10%%;
+    left: 87%;
+  }
+}

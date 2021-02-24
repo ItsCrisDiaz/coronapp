@@ -312,11 +312,11 @@ strong {
 
 .counter {
   margin-bottom: 7rem;
-  padding: 2.8rem 0;
 }
 
 .counter .stacking-context {
   --flow-space: 1.6rem;
+  padding: 2.8rem 0;
   background-color: var(--background-white);
   text-align: center;
   border-radius: 16px;
@@ -424,7 +424,6 @@ strong {
   --flow-space: 4rem;
   display: flex;
   justify-content: center;
-  gap: 3rem;
   flex-wrap: wrap;
   padding: 0 3rem;
   max-width: 97.8rem;
@@ -432,16 +431,19 @@ strong {
   margin-right: auto;
 }
 
-.service-container article {
+.service-container article .stacking-context {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 28rem;
+  padding: 4rem 2.5rem;
   width: 100%;
   max-width: 27.5rem;
-  padding: 4rem 2.5rem;
   border-radius: 8px;
+}
+
+.service-container article {
 }
 
 .service-container article:nth-child(odd) {
