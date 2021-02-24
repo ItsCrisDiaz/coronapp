@@ -50,6 +50,7 @@ html {
 
 .mobile-menu {
   background-image: url(../images/icons/menu-mobile.svg);
+  cursor: pointer;
 }
 
 .play {
@@ -69,11 +70,12 @@ html {
 }
 
 .black-space {
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   left: 0;
   top: 11.4rem;
-  background-color: rgba(88, 126, 236, 0.3);
-  width: 10vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 15vw;
   height: calc(100vh - 11.4rem);
 }
 
@@ -100,7 +102,6 @@ html {
 p {
   font-size: var(--normal);
   line-height: var(--line-paragraph);
-  /* letter-spacing: 0.08vw; */
   color: var(--grey);
 }
 
@@ -113,28 +114,40 @@ strong {
 /*--Block header*/
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   height: 11.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.6rem;
+  background-color: var(--background-white);
 }
 
 .header ul[role="menu"] {
   --flow-space: 2.4rem;
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   left: 10vw;
   top: 11.4rem;
   margin-top: 0;
-  padding: 6.7rem 0 0 6.8rem;
+  padding: 6.7rem 0 0 1rem;
   width: 95vw;
   height: calc(100vh - 11.4rem);
-  border: 1px solid var(--black);
   font-family: var(--font-button);
   background-color: var(--primary-color);
   color: var(--background-white);
   font-size: var(--normal);
   font-weight: bold;
+}
+
+.header ul[role="menu"] li {
+  padding: 1rem 0 1rem 5.8rem;
+}
+
+.header ul[role="menu"] li:hover {
+  background-color: #006350;
 }
 
 /*--Block hero*/
@@ -144,6 +157,12 @@ strong {
 }
 
 /*--Block hero-intro*/
+
+.hero-intro article {
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .hero-intro h1 {
   font-size: var(--biggest);
@@ -193,7 +212,6 @@ strong {
   margin-left: auto;
   margin-right: auto;
   border-radius: 15px;
-  z-index: 2;
 }
 
 .hero-functions::before {
@@ -202,7 +220,6 @@ strong {
   left: 4.58%;
   content: "";
   width: 18px;
-  z-index: -1;
   height: 100px;
   background-color: var(--primary-color);
   border-radius: 17px 0 0 17px;
@@ -283,7 +300,7 @@ strong {
 /*--Block features*/
 
 .features {
-  padding: 7.2rem 0;
+  padding: 7.2rem 1.8rem;
   background-color: var(--background-blue);
 }
 
@@ -294,9 +311,12 @@ strong {
 /*--Block counter*/
 
 .counter {
-  --flow-space: 1.6rem;
   margin-bottom: 7rem;
   padding: 2.8rem 0;
+}
+
+.counter .stacking-context {
+  --flow-space: 1.6rem;
   background-color: var(--background-white);
   text-align: center;
   border-radius: 16px;
@@ -334,6 +354,8 @@ strong {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1.6rem;
   max-width: 52rem;
   width: 100%;
@@ -370,7 +392,7 @@ strong {
 }
 
 .services {
-  padding: 4rem 0;
+  padding: 4rem 1.8rem;
 }
 
 .services h2 {
@@ -398,7 +420,8 @@ strong {
 .service-container {
   --flow-space: 4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 3rem;
   flex-wrap: wrap;
   padding: 0 3rem;
 }

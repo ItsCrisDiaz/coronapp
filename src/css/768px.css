@@ -1,0 +1,92 @@
+@media (min-width: 768px) {
+  .hero-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .hero-functions-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-wrapper {
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta {
+    max-width: 37rem;
+  }
+
+  .hero-cta h2,
+  .hero-cta p {
+    text-align: left;
+  }
+
+  .hero-cta div {
+    justify-content: left;
+  }
+
+  .hero-cta .button {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .features {
+    padding-top: 9.2rem;
+  }
+
+  .counter {
+    position: relative;
+    max-width: 65.4rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .counter .stacking-context {
+    --flow-space: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.8rem 12rem;
+  }
+
+  .features .square {
+    position: absolute;
+  }
+
+  .counter .square:nth-child(1) {
+    border-radius: 1.6rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    transform: rotate(30deg);
+    top: 63%;
+    left: -6%;
+  }
+
+  .counter .square:nth-child(2) {
+    border-radius: 3rem;
+    width: 12.7rem;
+    height: 12.7rem;
+    transform: rotate(105deg);
+    top: -9%;
+    left: 37%;
+  }
+
+  .counter .square:nth-child(3) {
+    border-radius: 3rem;
+    width: 12.7rem;
+    height: 12.7rem;
+    transform: rotate(30deg);
+    top: 10%;
+    right: -10%;
+  }
+
+  .service-container {
+    --flow-space: 0;
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+}

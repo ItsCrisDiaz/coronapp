@@ -22,6 +22,11 @@
       media="(min-width: 425px)"
       href="./src/css/425px.css"
     />
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px)"
+      href="./src/css/768px.css"
+    />
     <title>Coronapp</title>
   </head>
   <body>
@@ -30,8 +35,12 @@
         <img src="./src/images/icons/logo.png" alt="" />
       </picture>
       <section>
-        <span class="icon mobile-menu" type="mobile-menu"></span>
-        <section class="menu-display">
+        <span
+          id="mobileMenu"
+          class="icon mobile-menu"
+          type="mobile-menu"
+        ></span>
+        <section id="menuContainer" class="menu-display | menu-mobile">
           <div class="black-space"></div>
           <ul class="flow" role="menu">
             <li>INICIO</li>
@@ -44,17 +53,19 @@
     </header>
     <main class="hero">
       <section class="hero-intro | flow">
-        <h1>Cuida de tu salud y la de tu <strong>familia.</strong></h1>
-        <p class="small-fs">
-          Todo en un destino para consultas de salud de COVID-19. Consulte a más
-          de 10.000 trabajadores de la salud sobre sus inquietudes.
-        </p>
-        <section class="flow">
-          <button class="button | green-bg smaller-fs">EMPEZAR</button>
-          <a class="smaller-fs" href="#"
-            ><span class="icon play" location="video-link"></span>VER VIDEO</a
-          >
-        </section>
+        <article class="flow">
+          <h1>Cuida de tu salud y la de tu <strong>familia.</strong></h1>
+          <p class="small-fs">
+            Todo en un destino para consultas de salud de COVID-19. Consulte a
+            más de 10.000 trabajadores de la salud sobre sus inquietudes.
+          </p>
+          <section class="flow">
+            <button class="button | green-bg smaller-fs">EMPEZAR</button>
+            <a class="smaller-fs" href="#"
+              ><span class="icon play" location="video-link"></span>VER VIDEO</a
+            >
+          </section>
+        </article>
         <picture>
           <img
             src="./src/images/img/doctor-image.png"
@@ -62,38 +73,46 @@
           />
         </picture>
       </section>
-      <section class="hero-functions-container">
-        <article class="hero-functions">
-          <picture>
-            <img
-              src="./src/images/img/mujer-enferma.png"
-              alt="Ilustración de mujer enferma"
-            />
-          </picture>
-          <h2>Enfermedad por el nuevo coronavirus</h2>
-          <p class="smaller-fs">
-            La COVID-19 afecta de distintas maneras en función de cada persona.
+      <section class="hero-wrapper">
+        <section class="hero-functions-container">
+          <article class="hero-functions">
+            <picture>
+              <img
+                src="./src/images/img/mujer-enferma.png"
+                alt="Ilustración de mujer enferma"
+              />
+            </picture>
+            <h2>Enfermedad por el nuevo coronavirus</h2>
+            <p class="smaller-fs">
+              La COVID-19 afecta de distintas maneras en función de cada
+              persona.
+            </p>
+            <div class="dot-container">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </article>
+        </section>
+        <section class="hero-cta | flow">
+          <h2>Mantente seguro con <strong>Coronapp.</strong></h2>
+          <p class="small-fs">
+            Soporte 24x7 y plataforma móvil fácil de usar para llevar la
+            atención médica a su alcance. Regístrese y sea parte de la nueva
+            cultura de la salud.
           </p>
-          <div class="dot-container">
-            <div></div>
-            <div></div>
-            <div></div>
+          <div>
+            <button class="button | green-bg smaller-fs">EMPEZAR</button>
           </div>
-        </article>
+        </section>
       </section>
-      <section class="hero-cta | flow">
-        <h2>Mantente seguro con <strong>Coronapp.</strong></h2>
-        <p class="small-fs">
-          Soporte 24x7 y plataforma móvil fácil de usar para llevar la atención
-          médica a su alcance. Regístrese y sea parte de la nueva cultura de la
-          salud.
-        </p>
-        <div>
-          <button class="button | green-bg smaller-fs">EMPEZAR</button>
-        </div>
-      </section>
-      <section class="features">
-        <section class="counter | flow">
+    </main>
+    <section class="features">
+      <section class="counter">
+        <div class="square | green-bg"></div>
+        <div class="square | green-bg"></div>
+        <div class="square | green-bg"></div>
+        <section class="stacking-context | flow">
           <article>
             <h2>2m</h2>
             <h3>USUARIOS</h3>
@@ -107,68 +126,65 @@
             <h3>EXPERTOS MEDICOS</h3>
           </article>
         </section>
-        <section class="features-container | flow">
-          <article class="features-text | flow">
-            <h2>Habla con los <strong>expertos.</strong></h2>
-            <p class="small-fs">
-              Reserve citas o envíe consultas a miles de foros sobre problemas
-              de salud y prevención contra el Corona Virus.
-            </p>
-            <div>
-              <button class="button | green-bg">CARACTERISTICAS</button>
-            </div>
-          </article>
-          <article class="video-container">
-            <picture>
-              <img
-                src="./src/images/img/video.png"
-                alt="Reproductor de video"
-              />
-              <span class="icon play"></span>
-            </picture>
-          </article>
-        </section>
       </section>
-      <section class="services">
-        <section class="service-description">
-          <h2><strong>Cuidado de la salud</strong> al alcance de tu mano.</h2>
+      <section class="features-container | flow">
+        <article class="features-text | flow">
+          <h2>Habla con los <strong>expertos.</strong></h2>
           <p class="small-fs">
-            Llevando funciones de atención médica premium a tu alcance.
+            Reserve citas o envíe consultas a miles de foros sobre problemas de
+            salud y prevención contra el Corona Virus.
           </p>
-        </section>
-        <section class="service-container | flow">
-          <article>
-            <span class="icon sympthoms" location="services"></span>
-            <section>
-              <h3>Comprobador de síntomas</h3>
-              <p class="smaller-fs">
-                Compruebe si está infectado por COVID-19 con nuestro Comprobador
-                de síntomas
-              </p>
-            </section>
-          </article>
-          <article>
-            <span class="icon nurse" location="services"></span>
-            <section>
-              <h3>Soporte médico 24x7</h3>
-              <p class="smaller-fs">
-                Consulte con más de 10,000 trabajadores de la salud acerca de
-                sus inquietudes.
-              </p>
-            </section>
-          </article>
-          <article>
-            <span class="icon health" location="services"></span>
-            <section>
-              <h3>Condiciones</h3>
-              <p class="smaller-fs">
-                Llevando funciones de atención médica premium a tu alcance.
-              </p>
-            </section>
-          </article>
-        </section>
+          <div>
+            <button class="button | green-bg">CARACTERISTICAS</button>
+          </div>
+        </article>
+        <article class="video-container">
+          <picture>
+            <img src="./src/images/img/video.png" alt="Reproductor de video" />
+            <span class="icon play"></span>
+          </picture>
+        </article>
       </section>
-    </main>
+    </section>
+    <section class="services">
+      <section class="service-description">
+        <h2><strong>Cuidado de la salud</strong> al alcance de tu mano.</h2>
+        <p class="small-fs">
+          Llevando funciones de atención médica premium a tu alcance.
+        </p>
+      </section>
+      <section class="service-container | flow">
+        <article>
+          <span class="icon sympthoms" location="services"></span>
+          <section>
+            <h3>Comprobador de síntomas</h3>
+            <p class="smaller-fs">
+              Compruebe si está infectado por COVID-19 con nuestro Comprobador
+              de síntomas
+            </p>
+          </section>
+        </article>
+        <article>
+          <span class="icon nurse" location="services"></span>
+          <section>
+            <h3>Soporte médico 24x7</h3>
+            <p class="smaller-fs">
+              Consulte con más de 10,000 trabajadores de la salud acerca de sus
+              inquietudes.
+            </p>
+          </section>
+        </article>
+        <article>
+          <span class="icon health" location="services"></span>
+          <section>
+            <h3>Condiciones</h3>
+            <p class="smaller-fs">
+              Llevando funciones de atención médica premium a tu alcance.
+            </p>
+          </section>
+        </article>
+      </section>
+    </section>
     <footer>
       <picture>
         <img
@@ -183,5 +199,6 @@
         />
       </picture>
     </footer>
+    <script type="text/javascript" src="./src/js/index.js"></script>
   </body>
 </html>
