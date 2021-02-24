@@ -1,4 +1,8 @@
 @media (min-width: 1150px) {
+  .header ul[role="menu"] li:hover {
+    background-color: transparent;
+  }
+
   .service-container article {
     position: relative;
     z-index: 1;

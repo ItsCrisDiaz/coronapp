@@ -147,6 +147,7 @@ strong {
 }
 
 .header ul[role="menu"] li:hover {
+  cursor: pointer;
   background-color: #006350;
 }
 
