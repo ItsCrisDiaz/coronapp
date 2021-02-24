@@ -114,7 +114,7 @@ strong {
 /*--Block header*/
 
 .header {
-  position: sticky;
+  position: static;
   top: 0;
   z-index: 2;
   height: 11.4rem;
@@ -415,6 +415,9 @@ strong {
 
 .service-description {
   padding-bottom: 3.2rem;
+  max-width: 48.4rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .service-container {
@@ -424,6 +427,9 @@ strong {
   gap: 3rem;
   flex-wrap: wrap;
   padding: 0 3rem;
+  max-width: 97.8rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .service-container article {
@@ -433,7 +439,7 @@ strong {
   align-items: center;
   height: 28rem;
   width: 100%;
-  max-width: 28rem;
+  max-width: 27.5rem;
   padding: 4rem 2.5rem;
   border-radius: 8px;
 }
