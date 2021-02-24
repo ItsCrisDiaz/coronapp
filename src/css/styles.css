@@ -443,11 +443,9 @@ strong {
   border-radius: 8px;
 }
 
-.service-container article {
-}
-
-.service-container article:nth-child(odd) {
+.service-container article:nth-child(odd) .stacking-context {
   box-shadow: var(--box-shadow);
+  background-color: var(--background-white);
 }
 
 footer {
