@@ -73,14 +73,17 @@ html {
   position: fixed;
   z-index: 2;
   left: 0;
-  top: 11.4rem;
+  top: 5.5rem;
   background-color: rgba(0, 0, 0, 0.5);
   width: 15vw;
-  height: calc(100vh - 11.4rem);
+  height: calc(100vh - 5.5rem);
 }
 
 .menu-display {
   display: none;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-out;
 }
 
 .small-fs {
@@ -130,16 +133,19 @@ strong {
   position: fixed;
   z-index: 2;
   left: 10vw;
-  top: 11.4rem;
+  top: 5.5rem;
   margin-top: 0;
   padding: 6.7rem 0 0 1rem;
   width: 95vw;
-  height: calc(100vh - 11.4rem);
+  height: 100%;
   font-family: var(--font-button);
   background-color: var(--primary-color);
   color: var(--background-white);
   font-size: var(--normal);
   font-weight: bold;
+  transform: scaleX(1);
+  transform-origin: right;
+  transition: transform 0.2s ease-out;
 }
 
 .header ul[role="menu"] li {
@@ -296,6 +302,7 @@ strong {
   color: var(--background-white);
   font-weight: bold;
   letter-spacing: 0.14ch;
+  cursor: pointer;
 }
 
 /*--Block features*/
