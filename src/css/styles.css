@@ -459,9 +459,14 @@ strong {
 footer {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 5rem;
   flex-wrap: wrap;
   padding-bottom: 3rem;
+}
+
+footer img {
+  height: 6.5rem;
 }
 
 /*EXCEPTIONS*/
